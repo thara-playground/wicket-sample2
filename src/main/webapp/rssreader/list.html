@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>List</title>
+<style type="text/css" media="screen">
+<!--
+  h1 {
+    font-size: 16pt;
+    background-color: orange;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+-->
+</style>
+</head>
+<body>
+  <div wicket:id="feedback">ここにエラー内容を表示</div>
+  <h1>エントリ一覧</h1>
+  <div wicket:id="test">テスト</div>
+  
+  <h1>フィードURL登録</h1>
+  <form method="post" wicket:id="urlForm">
+    新規URL : <input type="text" name="urlTextField" value="" size="100" width="100" wicket:id="urlTextField"/>
+    <input type="submit" name="submit" value="登録" wicket:id="submitBtn"/>
+    <br/>
+    チェック : <input type="checkbox" wicket:id="check1"/><input type="checkbox" wicket:id="check2"/>
+  </form>
+</body>
+</html>
